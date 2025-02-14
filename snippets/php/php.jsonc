@@ -1,0 +1,280 @@
+{
+  "class_WRIGHT": {
+    "prefix": "class_WRIGHT",
+    "body": [
+      "class ${1:ClassName} ${2:extends ${3:AnotherClass}} ${4:implements ${5:Interface}}",
+      "{",
+      "\t$0",
+      "}",
+      ""
+    ],
+    "description": "Class definition\n\nWright Code Standard"
+  },
+  "function_construct_WRIGHT": {
+    "prefix": "function_construct_WRIGHT",
+    "body": [
+      "${1:public} function __construct(${2:${3:Type} $${4:var}${5: = ${6:null}}})",
+      "{",
+      "\t\\$this->${4:var} = $${4:var};$0",
+      "}"
+    ]
+  },
+  "function_WRIGHT": {
+    "prefix": "function_WRIGHT",
+    "body": [
+      "function ${2:FunctionName}(${3:${4:${5:Type} }$${6:var}${7: = ${8:null}}})",
+      "{",
+      "\t${0://blah}",
+      "}"
+    ],
+    "description": "Function\n\nWright Code Standard"
+  },
+  "param_WRIGHT": {
+    "prefix": "param_WRIGHT",
+    "body": [
+      "* @param ${1:Type} ${2:var} ${3:Description}$0"
+    ],
+    "description": "Paramater documentation\n\nWright Code Standard"
+  },
+  "doc_class_WRIGHT": {
+    "prefix": "doc_class_WRIGHT",
+    "body": [
+      "/**",
+" * ${6:undocumented class}",
+" */",
+      "class ${1:ClassName} ${2:extends ${3:AnotherClass}} ${4:implements ${5:Interface}}",
+      "{",
+      "\t$0",
+      "}",
+      ""
+    ],
+    "description": "Documented Class Declaration\n\nWright Code Standard"
+  },
+  "doc_property_WRIGHT": {
+    "prefix": "doc_property_WRIGHT",
+    "body": [
+      "/** @var ${1:Type} $${2:var} ${3:description} */",
+      "${4:protected} $${2:var}${5: = ${6:null}};$0"
+    ],
+    "description": "Documented Class Variable\n\nWright Code Standard"
+  },
+  "doc_function_WRIGHT": {
+    "prefix": "doc_function_WRIGHT",
+    "body": [
+      "/**",
+" * ${1:undocumented function summary}",
+" *",
+" * ${2:Undocumented function long description}",
+" *",
+"${3: * @param ${4:Type} $${5:var} ${6:Description}}",
+"${7: * @return ${8:type}}",
+"${9: * @throws ${10:conditon}}",
+" **/",
+      "${11:public }function ${12:FunctionName}(${13:${14:${4:Type} }$${5:var}${15: = ${16:null}}})",
+      "{",
+      "\t${0://blah}",
+      "}"
+    ],
+    "description": "Documented function\n\nWright Code Standard"
+  },
+  "define(…, …)": {
+    "prefix": "def_WRIGHT",
+    "body": [
+      "define('$1', ${2:'$3'});",
+      "$0"
+    ],
+    "description": "Definition\n\nWright Code Standard"
+  },
+  "do_while_WRIGHT": {
+    "prefix": "do_while_WRIGHT",
+    "body": [
+      "do",
+      "{",
+      "\t${0://blah}",
+      "}while(${1:$${2:a} <= ${3:10}});"
+    ],
+    "description": "Do-While loop"
+  },
+  "while_WRIGHT": {
+    "prefix": "while_WRIGHT",
+    "body": [
+      "while(${1:$${2:a} <= ${3:10}})",
+      "{",
+      "\t${0://blah}",
+      "}"
+    ],
+    "description": "While-loop\n\nWright Code Standard"
+  },
+  "for_WRIGHT": {
+    "prefix": "for_WRIGHT",
+    "body": [
+      "for($${1:i}=${2:0}; $${1:i} < $3; $${1:i}++)",
+      "{",
+      "\t${0://blah}",
+      "}"
+    ],
+    "description": "For-loop\n\nWright Code Standard"
+  },
+  "foreach_WRIGHT": {
+    "prefix": "foreach_WRIGHT",
+    "body": [
+      "foreach(${1:\\$variable} as ${2:\\$key} => ${3:\\$value})",
+      "{",
+      "\t${0://blah}",
+      "}"
+    ],
+    "description": "Foreach loop\n\nWright Code Standard"
+  },
+  "if_WRIGHT": {
+    "prefix": "if_WRIGHT",
+    "body": [
+      "if(${1:condition})",
+      "{",
+      "\t${0://blah}",
+      "}"
+    ],
+    "description": "If block\n\nWright Code Standard"
+  },
+  "if_else_WRIGHT": {
+    "prefix": "if_else_WRIGHT",
+    "body": [
+      "if(${1:condition})",
+      "{",
+      "\t${2://blah}",
+      "}else",
+      "{",
+      "\t${3://blah}",
+      "}",
+      "$0"
+    ],
+    "description": "If Else block\n\nWright Code Standard"
+  },
+  "else_WRIGHT": {
+    "prefix": "else_WRIGHT",
+    "body": [
+      "else",
+      "{",
+      "\t${0://blah}",
+      "}"
+    ],
+    "description": "Else block\n\nWright Code Standard"
+  },
+  "elseif_WRIGHT": {
+    "prefix": "elseif_WRIGHT",
+    "body": [
+      "elseif(${1:condition})",
+      "{",
+      "\t${0://blah}",
+      "}"
+    ],
+    "description": "Elseif block\n\nWright Code Standard"
+  },
+  "ternary_WRIGHT": {
+    "prefix": "ternary_WRIGHT",
+    "body": "$${1:retVal} = (${2:condition}) ? ${3:a} : ${4:b} ;",
+    "description": "Ternary conditional assignment\n\nWright Code Standard"
+  },
+  "Associative array small": {
+    "prefix": "array_assc_small_WRIGHT",
+    "body": [
+      "array('${1:xxx}'=>${2:xxxx});"
+    ],
+    "description": "Array initializer for small\n associated arrays\n\nWright Code Standard"
+  },
+  "Associative array large": {
+    "prefix": "array_assc_large_WRIGHT",
+    "body": [
+      "",
+      "array(",
+      "\t'${1:xxx}'=>${2:xxxx},",
+      ");"
+    ],
+    "description": "Array initializer for large\n associated arrays\n\nWright Code Standard"
+  },
+  "Empty array": {
+    "prefix": "array_WRIGHT",
+    "body": [
+      "array($1);"
+    ],
+    "description": "Array initializer\n\nWright Code Standard"
+  },
+  "keyval_WRIGHT": {
+    "prefix": "keyval_WRIGHT",
+    "body": "'$1' => $2${3:,} $0",
+    "description": "Key-Value initializer\n\nWright Code Standard"
+  },
+  "switch_WRIGHT": {
+    "prefix": "switch_WRIGHT",
+    "body": [
+      "switch(${1:\\$variable})",
+      "{",
+      "\tcase '${2:value}':",
+      "\t\t${3://blah}",
+      "\t\tbreak;",
+      "\t$0",
+      "\tdefault:",
+      "\t\t${4://blah}",
+      "\t\tbreak;",
+      "}"
+    ],
+    "description": "Switch block\n\nWright Code Standard"
+  },
+  "case_WRIGHT": {
+    "prefix": "case_WRIGHT",
+    "body": [
+      "case '${1:value}':",
+      "\t${0://blah}",
+      "\tbreak;"
+    ],
+    "description": "Case Block\n\nWright Code Standard"
+  },
+  "this_WRIGHT": {
+    "prefix": "this_WRIGHT",
+    "body": "\\$this->$0;",
+    "description": "$this->...\n\nWright Code Standard"
+  },
+  "throw_WRIGHT": {
+    "prefix": "throw_WRIGHT",
+    "body": [
+      "throw new $1Exception(${2:\"${3:Error Processing Request}\"}${4:, ${5:1}});",
+      "$0"
+    ],
+    "description": "Throw exception\n\nWright Code Standard"
+  },
+  "try_catch_WRIGHT": {
+    "prefix": "try_catch_WRIGHT",
+    "body": [
+      "try",
+      "{",
+      "\t${1://code...}",
+      "}catch(${2:\\Throwable} ${3:\\$th})",
+      "{",
+      "\t${4://throw \\$th;}",
+      "}"
+    ],
+    "description": "Try catch block"
+  },
+  "echo_WRIGHT": {
+    "prefix": "echo_WRIGHT",
+    "body": [
+      "echo \"${1:blah}\";"
+    ],
+    "description": "Echo construct"
+  },
+  "print_r_WRIGHT": {
+    "prefix": "print_r_WRIGHT",
+    "body": [
+      "print_r(${1:\\$variable});"
+    ],
+    "description": "print_r function simple"
+  },
+  "print_r_array_WRIGHT": {
+    "prefix": "print_r_array_WRIGHT",
+    "body": [
+      "echo \"<pre>\";",
+      "print_r(${1:\\$variable});",
+      "echo \"</pre>\";"
+    ],
+    "description": "print_r function for array"
+  }
+}
